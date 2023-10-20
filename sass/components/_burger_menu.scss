@@ -7,6 +7,8 @@
 	overflow: visible;
 	position: relative;
 	z-index: 2;
+	background-color: transparent;
+	border: none;
 
 	@include mq('tablet') {
 		display: none;
