@@ -1,0 +1,12 @@
+@use '../abstracts/' as *;
+
+.faq {
+	background-color: $color-light-gray;
+}
+
+.faq__heading {
+	font-size: 2rem;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+	text-align: center;
+}

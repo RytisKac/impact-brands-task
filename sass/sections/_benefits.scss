@@ -1,0 +1,47 @@
+@use '../abstracts/' as *;
+
+.benefits {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 2rem;
+	justify-content: center;
+	max-width: 36rem;
+	margin-inline: auto;
+
+	@include mq('tablet') {
+		max-width: none;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+.benefits__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: min(1.4rem, 2vw) min(3.8rem, 5vw);
+	max-width: 21rem;
+	background-color: $color-light-red;
+	border-radius: 15px;
+
+	text-align: center;
+	gap: 1rem;
+
+	@include mq('tablet-wide') {
+		flex-direction: row;
+		gap: 1rem;
+		text-align: left;
+	}
+
+	img {
+		max-width: 17rem;
+	}
+
+	&:hover {
+		img {
+			filter: invert(8%) sepia(100%) saturate(7344%) hue-rotate(3deg)
+				brightness(89%) contrast(89%);
+		}
+	}
+}

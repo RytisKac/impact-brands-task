@@ -1,0 +1,15 @@
+@use '../abstracts/' as *;
+
+.container {
+	max-width: 90rem;
+	padding-inline: 1.6rem;
+	margin-inline: auto;
+
+	@include mq('tablet-wide') {
+		padding-inline: 0;
+	}
+}
+
+.semi-bold {
+	font-weight: 600;
+}

@@ -1,0 +1,7 @@
+.padding-block {
+	padding-block: 30px;
+
+	@media screen and (min-width: 768px) {
+		padding-block: 40px;
+	}
+}
